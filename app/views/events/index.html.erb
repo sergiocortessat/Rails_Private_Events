@@ -1,6 +1,7 @@
 Upcoming Events:<br/>
   <% @upcoming_events.each do |event| %>
     <%= event.description %> <br/>
+    <%= link_to "Show", event %><br/><br/>
   <% end %>
 
   <br/><br/>
@@ -8,12 +9,5 @@ Upcoming Events:<br/>
   Past Events:<br/>
   <% @past_events.each do |event|%>
     <%= event.description%> <br/>
+    <%= link_to "Show", event %><br/><br/>
   <% end%>
-
-  <br/><br/>
-
-  Created Events:<br/>
-  <% @created_events.each do |event|%>
-    <%= event.description%> <br/>
-  <% end%>
-
