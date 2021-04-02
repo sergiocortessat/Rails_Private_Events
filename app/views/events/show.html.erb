@@ -1,3 +1,9 @@
   <%= @event.description %><br/>
     <%= @event.id %>
     <%= @event.date %><br/>
+     <%= attend_button(@event) %>
+    Host: <%= @event.creator.email %><br/>
+    Attendees: <br/>
+    <% @event.attendees.uniq.each do |attendee| %>
+        <%= attendee.email %><br><br/>
+    <% end %>br/>
