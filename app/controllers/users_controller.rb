@@ -9,5 +9,4 @@ class UsersController < ApplicationController
     @past_events = current_user.attended_events.past
     @created_events = current_user.created_events
   end
-  
 end

@@ -1,9 +1,12 @@
+  <div class="">
   <%= @event.description %><br/>
     <%= @event.id %>
     <%= @event.date %><br/>
      <%= attend_button(@event) %>
-    Host: <%= @event.creator.email %><br/>
+    Host: <%= @event.creator.name %><br/>
     Attendees: <br/>
     <% @event.attendees.uniq.each do |attendee| %>
-        <%= attendee.email %><br><br/>
-    <% end %>br/>
+        <%= attendee.name %><br><br/>
+    <% end %><br/>
+
+    </div>
