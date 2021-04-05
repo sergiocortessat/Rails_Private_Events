@@ -2,7 +2,6 @@ require 'rails_helper'
 require 'capybara/rspec'
 
 RSpec.describe Event, type: :model do
-
   subject do
     described_class.new(description: 'JS Conf',
                         date: '1/1/2020',

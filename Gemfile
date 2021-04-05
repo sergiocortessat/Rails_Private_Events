@@ -7,8 +7,8 @@ gem 'devise'
 
 gem 'rexml'
 
-gem 'shoulda-matchers'
 gem 'hirb'
+gem 'shoulda-matchers'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # Use sqlite3 as the database for Active Record
