@@ -2,9 +2,10 @@ require 'rails_helper'
 require 'capybara/rspec'
 
 RSpec.describe Event, type: :model do
+
   subject do
     described_class.new(description: 'JS Conf',
-                        date: DateTime.now,
+                        date: '1/1/2020',
                         creator_id: 1)
   end
 
@@ -14,9 +15,9 @@ RSpec.describe Event, type: :model do
 
   context 'description validation' do
     it 'ensures description presence' do
-      u = User.new(email: 'ngani@gmail.com')
+      u = User.new(name: 'ari', email: 'ngani@gmail.com', password: '123456', password_confirmation: '123456')
       u.save
-      expect(Event.new(description: 'Angular Clan', date: '1/1/2020', creator_id: 1)).to be_invalid
+      expect(Event.new(description: 'Angular Clan', date: '1/1/2020', creator_id: u.id)).to be_valid
     end
   end
   context 'description validation' do
@@ -27,7 +28,7 @@ RSpec.describe Event, type: :model do
 
   context 'description validation' do
     it 'ensures description presence' do
-      expect(Event.new(description: 'star wars')).to be_invalid
+      expect(Event.new(description: 'Big Bang Theory')).to be_invalid
     end
   end
 
