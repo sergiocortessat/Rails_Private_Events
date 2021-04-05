@@ -1,4 +1,4 @@
-# Active_Records
+# Private-Events
 
 ## Table of Contents
   <br />
@@ -23,7 +23,7 @@
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
 
-The re-former project sets up an initial rails app containing a initial database that takes user data, destroy it and edit it.
+The Private Event project sets up an initial rails app containing a User, Event databases. This page can log in users and create events for each of them. As well can let users attend others events.
 
 ## Screenshot Test
 #
@@ -37,6 +37,8 @@ The re-former project sets up an initial rails app containing a initial database
 
 * [RUBY]
 * [RAILS]
+* [DEVISE]
+* [RSPEC&CAPIBARA]
 
 ## Contributing
 
@@ -55,16 +57,37 @@ Terminal or similar to execute the program.
 ## Clone project
 
 - To get a local copy up and running follow these simple example steps.
-- Clone this repository with git clone ```https://github.com/sergiocortessat/Rails_Form/tree/feature``` using your terminal or command line.
-- Change to the project directory by entering: ```cd Rails_Form``` in the terminal.
+- Clone this repository with git clone ```https://github.com/sergiocortessat/Rails_Private_Events/tree/feature``` using your terminal or command line.
+- Change to the project directory by entering: ```cd Private_Events``` in the terminal.
 
 
-## How to use the Active_record app
+## How to use the Private-Event app
 1. run the command ```bundle install```   This will install the required dependencies
 2. run the command ```rails db:create```. This will initialize the necessary migration files
 3. run the command ```rails db:migrate``` 
 4. run the command ```rails console```
 
+
+## Testing
+
+In this project, the testing was done using Rspec and Capybara to test logic and forms
+
+
+## Run
+The testing file is included in spec folder under logicrspec.rb.
+- go to the folder spec: cd spec
+- Inside your terminal type you can type: 
+
+1. Rspec features/create_event_spec.rb
+2. Rspec features/attended_event_spec.rb
+3. Rspec features/event_spec.rb
+4. Rspec features/user_spec.rb
+5. Rspec models/event_spec.rb
+6. Rspec models/user_spec.rb
+7. Rspec system/sign_up_spec.rb
+8. Rspec system/user_sing_in_spec.rb
+
+- All test pass
 
 ## Authors
 
@@ -72,10 +95,16 @@ Terminal or similar to execute the program.
 
 - Github: [@sergiocortessat](https://github.com/sergiocortessat)
 - Twitter: [@sergiocortessat](https://twitter.com/sergiocortessat)
+- LinkedIn: [@sergiocortessat](www.linkedin.com/in/sergio-cortes-satizabal-3b452194)
+
+👤 
+
+- Github: [@nganifaith](https://github.com/nganifaith)
+- Twitter: [@nganifaith](https://twitter.com/Bright_Ngani)
+- LinkedIn: [@nganifaith](https://www.linkedin.com/in/ngani-faith/)
 
 
-
-Project Link: [Ruby-Forms](https://github.com/sergiocortessat/Rails_Form/issues/1)
+Project Link: [Rails-Authentication](https://github.com/sergiocortessat/Rails_Private_Events/issues/2)
 
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -85,6 +114,6 @@ Project Link: [Ruby-Forms](https://github.com/sergiocortessat/Rails_Form/issues/
 
 ## 📝 License
 
-This project is [MIT](LICENSE) licensed.
+This project is [MIT](https://github.com/sergiocortessat/sergiocortessat/blob/main/LICENSE) licensed.
 
 
