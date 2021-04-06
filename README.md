@@ -31,15 +31,6 @@ The Private Event project sets up an initial rails app containing a User, Event 
   <img height="auto" src="Screenshot.png">
 </p>
 
-#
-
-### Built With
-
-* [RUBY]
-* [RAILS]
-* [DEVISE]
-* [RSPEC&CAPIBARA]
-
 ## Contributing
 
 Contributions make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -63,9 +54,10 @@ Terminal or similar to execute the program.
 
 ## How to use the Private-Event app
 1. run the command ```bundle install```   This will install the required dependencies
-2. run the command ```rails db:create```. This will initialize the necessary migration files
-3. run the command ```rails db:migrate``` 
-4. run the command ```rails console```
+2. run the command ```rails webpacker:install ``` This will install the webpack to avoid specific rails 6 problems
+3. run the command ```rails db:create``` This will initialize the necessary migration files
+4. run the command ```rails db:migrate``` 
+5. run the command ```rails server```
 
 
 ## Testing
@@ -106,6 +98,13 @@ The testing file is included in spec folder under logicrspec.rb.
 
 Project Link: [Rails-Authentication](https://github.com/sergiocortessat/Rails_Private_Events/issues/2)
 
+
+### Built With
+
+* [RUBY]
+* [RAILS]
+* [DEVISE]
+* [RSPEC&CAPIBARA]
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
