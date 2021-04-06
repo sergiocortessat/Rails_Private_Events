@@ -12,7 +12,7 @@ module ApplicationHelper
         end) +
         (content_tag :li, class: 'nav-item mx-3' do
           link_to 'My Events', user_path(:id), class: 'text-decoration-none link-dark'
-        end) 
+        end)
 
     else
       (content_tag :li, class: 'nav-item mx-3' do
